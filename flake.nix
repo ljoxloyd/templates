@@ -4,7 +4,7 @@
   outputs = inputs: {
     templates = {
       ts-pnpm = {
-        path = ./ts-pnpm;
+        path = ./templates/ts-pnpm;
         description = ''
           Typescript + PNPM starter
         '';
@@ -14,7 +14,7 @@
       };
 
       ts-bun = {
-        path = ./ts-bun;
+        path = ./templates/ts-bun;
         description = ''
           Typescript + Bun starter
         '';
