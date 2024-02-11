@@ -22,6 +22,20 @@
           Run `bun init` or `bun create ...`
         '';
       };
+
+      ts-lit = {
+        path = ./templates/ts-lit;
+        description = ''
+          Typescript + Lit starter
+        '';
+      };
+
+      ts-angular = {
+        path = ./templates/ts-angular;
+        description = ''
+          Typescript + Lit starter
+        '';
+      };
     };
   };
 }
