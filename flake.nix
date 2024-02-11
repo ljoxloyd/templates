@@ -13,10 +13,10 @@
         '';
       };
 
-      ts-bun = {
-        path = ./templates/ts-bun;
+      ts-beth = {
+        path = ./templates/ts-beth;
         description = ''
-          Typescript + Bun starter
+          TS, Bun, Elysia, Tailwindcss, HTMX
         '';
         welcomText = ''
           Run `bun init` or `bun create ...`
@@ -33,7 +33,7 @@
       ts-angular = {
         path = ./templates/ts-angular;
         description = ''
-          Typescript + Lit starter
+          Angular starter
         '';
       };
     };
