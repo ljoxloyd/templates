@@ -12,6 +12,7 @@
     {
       devShells.javascript = import ./shells/js/shell.nix { inherit pkgs; };
       devShells.csharp = import ./shells/csharp/shell.nix { inherit pkgs; };
+      devShells.golang = import ./shells/go/shell.nix { inherit pkgs; };
 
       templates = {
         ts-pnpm = {
