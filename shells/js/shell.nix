@@ -13,6 +13,7 @@
     pnpm = node.pkgs.pnpm;
   in
   {
+    name = "javascript-dev-shell";
     packages = [
       pkgs.bun
       pkgs.biome

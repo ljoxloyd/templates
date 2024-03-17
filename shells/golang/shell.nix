@@ -1,5 +1,7 @@
 { pkgs, ... }: pkgs.mkShell
 {
+  name = "golang-deb-shell";
+
   packages = with pkgs; [
     go
     gopls

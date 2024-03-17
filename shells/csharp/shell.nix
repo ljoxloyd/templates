@@ -1,4 +1,4 @@
-{ pkgs }: pkgs.mkShell {
+{ pkgs, ... }: pkgs.mkShell {
   name = "csharp-shell-dev";
   packages = [
     pkgs.dotnetCorePackages.sdk_8_0

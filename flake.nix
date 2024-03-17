@@ -1,18 +1,14 @@
 {
   inputs = {
-
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { nixpkgs, utils, ... }: utils.lib.eachDefaultSystem (system:
-    let
-      pkgs = import nixpkgs { inherit system; };
-    in
+  outputs = { utils, ... }: utils.lib.eachDefaultSystem (system:
+
     {
-      devShells.javascript = import ./shells/js/shell.nix { inherit pkgs; };
-      devShells.csharp = import ./shells/csharp/shell.nix { inherit pkgs; };
-      devShells.golang = import ./shells/golang/shell.nix { inherit pkgs; };
+      devShells.javascript = import ./shells/js/shell.nix;
+      devShells.csharp = import ./shells/csharp/shell.nix;
+      devShells.golang = import ./shells/golang/shell.nix;
 
       templates = {
         ts-pnpm = {
